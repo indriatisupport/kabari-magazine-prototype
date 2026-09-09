@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabari Magazine | Home</title>
+    <script src="global.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('mobile-active')">☰</div>
+        <div class="logo"><a href="index.html">Kabari Magazine</a></div>
+                <nav class="nav-links">
+                <a href="index.html" data-en="Home" data-id="Beranda">Home</a>
+                <a href="latest.html" data-en="Latest Issue" data-id="Edisi Terbaru">Latest Issue</a>
+                <a href="archive.html" data-en="Archives" data-id="Arsip">Archives</a>
+                <a href="about.html" data-en="About" data-id="Tentang">About</a>
+                <a href="contact.html" data-en="Contact" data-id="Kontak">Contact</a>
+            </nav>
+        <div class="lang-toggle">
+            <span class="lang-btn active-lang" onclick="setLang('en')">EN</span> | 
+            <span class="lang-btn" onclick="setLang('id')">ID</span>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION (Single Explore Button) -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1 data-en="Kabari Magazine" data-id="Majalah Kabari">Kabari Magazine</h1>
+                <p data-en="Connecting Indonesian Stories, Culture & Community in America." data-id="Menghubungkan Kisah, Budaya & Komunitas Indonesia di Amerika.">Connecting Indonesian Stories, Culture & Community in America.</p>
+                <div class="hero-buttons">
+                    <a href="archive.html" class="btn btn-solid" data-en="Explore Archives" data-id="Jelajahi Arsip">Explore Archives</a>
+                </div>
+            </div>
+            <div class="hero-cover">
+                <a href="latest.html" class="hero-placeholder" style="text-decoration: none; display: flex; color: #777;">[ Latest Magazine Cover ]</a>
+            </div>
+        </section>
+
+        <!-- FEATURED STORIES -->
+        <section class="section">
+            <div class="center-title">
+                <h2 class="section-title"><span data-en="Featured Stories" data-id="Kisah Pilihan">Featured Stories</span></h2>
+            </div>
+            <div class="featured-grid">
+                <div class="story-card">
+                    <div class="story-image">[ Image ]</div>
+                    <div class="story-content">
+                        <span class="story-cat">Culture</span>
+                        <h3>The Evolution of Batik in Modern Fashion</h3>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-image">[ Image ]</div>
+                    <div class="story-content">
+                        <span class="story-cat">Business</span>
+                        <h3>Indonesian Entrepreneurs in Tech</h3>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-image">[ Image ]</div>
+                    <div class="story-content">
+                        <span class="story-cat">Community</span>
+                        <h3>Festivals That Bring Us Together</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     <!-- RECENT ISSUES -->
+<section class="section bg-light-gold">
+    <div class="center-title">
+        <h2 class="section-title"><span data-en="Recent Issues" data-id="Edisi Terbaru">Recent Issues</span></h2>
+    </div>
+    <div class="issue-grid">
+        <div class="issue-card">
+            <div class="issue-cover" onclick="window.location.href='latest.html'">[ Sep 2026 ]</div>
+            <h4>September 2026</h4>
+            <div class="issue-links">
+                <a href="#" data-en="Read Online" data-id="Baca Online">Read Online</a> 
+                <a href="#" data-en="Download PDF" data-id="Unduh PDF">Download PDF</a>
+            </div>
+        </div>
+        <div class="issue-card">
+            <div class="issue-cover">[ Aug 2026 ]</div>
+            <h4>August 2026</h4>
+            <div class="issue-links">
+                <a href="#" data-en="Read Online" data-id="Baca Online">Read Online</a> 
+                <a href="#" data-en="Download PDF" data-id="Unduh PDF">Download PDF</a>
+            </div>
+        </div>
+        <div class="issue-card">
+            <div class="issue-cover">[ Jul 2026 ]</div>
+            <h4>July 2026</h4>
+            <div class="issue-links">
+                <a href="#" data-en="Read Online" data-id="Baca Online">Read Online</a> 
+                <a href="#" data-en="Download PDF" data-id="Unduh PDF">Download PDF</a>
+            </div>
+        </div>
+        <div class="issue-card">
+            <div class="issue-cover">[ Jun 2026 ]</div>
+            <h4>June 2026</h4>
+            <div class="issue-links">
+                <a href="#" data-en="Read Online" data-id="Baca Online">Read Online</a> 
+                <a href="#" data-en="Download PDF" data-id="Unduh PDF">Download PDF</a>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 3rem;">
+        <a href="archive.html" class="btn btn-outline" data-en="View Full Archive" data-id="Lihat Semua Arsip">View Full Archive</a>
+    </div>
+</section>
+    </main>
+
+    <!-- DETAILED FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="color: #fff; margin-bottom: 1rem; font-size: 1.5rem;">Kabari Magazine</div>
+                <p style="color: #aaa; font-size: 0.9rem;" data-en="The leading voice and premium archive for the Indonesian-American community, operating since 2007." data-id="Suara terkemuka dan arsip premium untuk komunitas Indonesia-Amerika, beroperasi sejak 2007.">The leading voice and premium archive for the Indonesian-American community, operating since 2007.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-en="Quick Links" data-id="Tautan Cepat">Quick Links</h4>
+                <ul>
+                    <li><a href="index.html" data-en="Home" data-id="Beranda">Home</a></li>
+                    <li><a href="archive.html" data-en="Magazine Archive" data-id="Arsip Majalah">Magazine Archive</a></li>
+                    <li><a href="about.html" data-en="About Us" data-id="Tentang Kami">About Us</a></li>
+                    <li><a href="#" data-en="Subscribe" data-id="Berlangganan">Subscribe</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-en="Contact" data-id="Kontak">Contact</h4>
+                <ul>
+                    <li>info@kabarinews.com</li>
+                    <li>+1 (555) 123-4567</li>
+                    <li>San Francisco, CA</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-en="Follow Us" data-id="Ikuti Kami">Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter / X</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; font-size: 0.85rem; color: #666;">
+            <p>&copy; 2026 Kabari Magazine. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+<script src="global.js"></script>
+</body>
+</html>
